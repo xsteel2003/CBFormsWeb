@@ -37,6 +37,9 @@ namespace CBFormsWeb
                 app.UseExceptionHandler("/Error");
             }
 
+            app.UseOoui();
+            Xamarin.Forms.Forms.Init();
+
             app.UseStaticFiles();
 
             app.UseMvc();
